@@ -9,7 +9,7 @@ The giigraph module is based on a prototype written during a code camp of
 the openslaws.eu project at the university of applied sciences Salzburg,
 Austria (March 20st and 21st 2015).
 
-The open data project 'openlaws.eu' is aiming at providing legal
+The open data project [openlaws](www.openlaws.eu) is aiming at providing legal
 knowledge freely and sophistically processed by using state of the art
 technologies. Since the project is based on an european level, it also
 tries to interlink as many european legal domains as possible.
@@ -52,6 +52,7 @@ The gii website does not have an API to optain the data without any problems.
 A webcrawler must be written first to get all items in place. I will be
 using scrapy. 
 
+### TODO
 
 
 
