@@ -1,5 +1,4 @@
-from distutils.core import setup
-
+from setuptools import setup, find_packages
 install_requires = [
     # List your project dependencies here.
     # For more details, see:
@@ -16,5 +15,6 @@ setup(
     license='Apache License 2.0',
     author='kuhn',
     author_email='kuhn@ids-mannheim.de',
-    description='converter for gii to openlaws geoff'
+    description='converter for gii to openlaws geoff',
+    packages=find_packages('src')
 )
