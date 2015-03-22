@@ -1,7 +1,9 @@
 # openslawsgii
 ## connecting openlaws to the german federal law
 
-there is a hands-on in the notebook/ folder.
+There is a [demo ipython-notebook]
+(http://nbviewer.ipython.org/github/fkuhn/openlawsgii/blob/master/notebooks/giigraph_demo.ipynb) available.
+
 
 The giigraph module is based on a prototype written during a code camp of
 the openslaws.eu project at the university of applied sciences Salzburg,
