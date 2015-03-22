@@ -2,5 +2,6 @@
 build/
 dist/
 src/openlawsgii.egg-info/
+notebooks/.ipynb_checkpoints/
 *.pyc
 *.swp
