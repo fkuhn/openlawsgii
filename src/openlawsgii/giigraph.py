@@ -3,9 +3,10 @@ __doc__ = 'a hack to convert gii xml data to openlaws-neo4j'
 import codecs
 import networkx
 import neonx
+from zipfile import ZipFile
 from lxml import etree
 
-# TODO: find a non hardoced solution
+# TODO: find a non hardcoded solution
 LAWMETAXPATH = "/dokumente/norm/metadaten"
 
 class GiiGraph(networkx.MultiDiGraph):
@@ -52,7 +53,7 @@ class GiiGraph(networkx.MultiDiGraph):
 
     def add_german_article(self, giietree):
         """
-        adds the etree to the graph structure
+        adds the eptree to the graph structure
         :param giietree:
         :return:
         """
@@ -87,3 +88,13 @@ class GiiGraph(networkx.MultiDiGraph):
         """
         gdata = neonx.get_geoff(self, "LINKS_TO")
         return gdata
+
+    def readzippedxml(self, xmlzip):
+        """
+        accesses the generic xml.zip of each gii document.
+        :param xmlzip:
+        :return: xml-file
+        """
+        zipped = ZipFile(xmlzip)
+        zname = zipped.filelist[0].filename
+        fileobject = zipped.open(zname)
